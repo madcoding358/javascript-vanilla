@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 480px;
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    background: #dae0e8;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin{
+    padding: 16px;
+    background-color: #dae0e8;
+    border-radius: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #191a1c;
+    margin: 24px 0;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #191a1c;
+    margin: 12px 0;
+}
+
+.primary-text{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #686D76;
+    width: 80%;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.login-form{
+    width: 90%;
+}
+
+.input-container{
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background-color: #dae0e8;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #686D76;
+}
+
+.input-container input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.link{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #191a1c;
+    float: right;
+}
+
+.btn-submit{
+    margin: 12px 0;
+    width: 100%;
+    padding: 8px;
+    background-color: #191a1c;
+    color: #babcbf;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.signin-btn-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn img{
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 98%;
+    }
+}
